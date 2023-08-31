@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./mainwebsite.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <script src="./mainwebsite.js" defer></script>
+    <title>Perfect English Grammar</title>
+</head>
+<body>
+    <!-- Popup section -->
+    <div id="popup-section">
+        <div id="popup">
+            <div class="interact-logo">
+                <a href="https://www.tryinteract.com/?utm_source=Powered%20By%20Link"><img src="https://www.svgrepo.com/show/401966/information.svg" alt="Interact quiz logo" class="i-logo"></a>
+            </div>
+            <div class="popup-content">
+                <p>What's my English grammar level?</p>
+                <button class="access-quiz-btn" type="button">Take the free quiz here!</button>
+            </div>
+            <div class="toggle-off">
+                <button class="x-button" type="button">
+                    <p class="backslash"></p>
+                    <p class="forwardslash"></p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Quiz Section - Appears only after clicking the button -->
+    <!-- X - Button Section-->
+    <div class="overlay" style="display:none">
+        <div class="toggle-off-quiz">
+            <button class="close-button" type="button">
+                <p class="backslash-quiz"></p>
+                <p class="forwardslash-quiz"></p>
+            </button>
+        </div>
+        <div class="quiz-container">
+            <h1>Which is correct?</h1>
+            <div class="buttons-container">
+                <button class="quiz-answer1" id="btns" type="button"><p></p>Are you live in London?</button>
+                <button class="quiz-answer2" id="btns" type="button"><p></p>Do you live in London?</button>
+                <button class="quiz-answer3" id="btns" type="button"><p></p>Be you live in London?</button>
+                <button class="quiz-answer4" id="btns" type="button"><p></p>I don't know the answer to this question!</button>
+            </div>
+            <h3 class="question-id">1/20</h3>
+        </div>
+    </div>
+    
+
+    <!-- Hidden Quiz Section - Correct Answer -->
+    <div class="overlay" style="display:none">
+        <div class="toggle-off-quiz">
+            <button class="close-button" type="button">
+                <p class="backslash-quiz"></p>
+                <p class="forwardslash-quiz"></p>
+            </button>
+        </div>
+        <div class="quiz-correct">
+            <div class="correct-inner">
+                <h1>Correct!</h1>
+                <h3>Which is correct?</h3>
+                <p><span class="upper-case">Your Answer:</span>Do you live in London?</p>
+                <p><span class="upper-case">Explanation:</span>We make the question form of the present simple of verbs like 'live' with 'do' or 'does'.</p>
+                <br>
+                <button class="next-btn" type="button">Next</button>
+            </div>
+            <h3 class="question-id">1/20</h3>
+        </div>
+    </div>
+
+    <!-- Hidden Quiz Section - Incorrect Answer -->
+    <div class="overlay" style="display:none">
+        <div class="toggle-off-quiz">
+            <button class="close-button" type="button">
+                <p class="backslash-quiz"></p>
+                <p class="forwardslash-quiz"></p>
+            </button>
+        </div>
+        <div class="quiz-incorrect">
+            <div class="incorrect-inner">
+                <h1>NOT Correct!</h1>
+                <h3>Which is correct?</h3>
+                <p><span class="upper-case">Your Answer:</span>Are you live in London?</p>
+                <p><span class="upper-case">Correct Answer:</span>Do you live in London?</p>
+                <p><span class="upper-case">Explanation:</span>We make the question form of the present simple of verbs like 'live' with 'do' or 'does'.</p>
+                <br>
+                <button class="next-btn" type="button">Next</button>
+            </div>
+            <h3 class="question-id">1/20</h3>
+        </div> 
+    </div>   
+
+    <!-- Navigation bar - Desktop Section-->
+    <nav>
+        <div class="desktop">
+            <div>
+                <a href="mainwebsite.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Navigation Bar - Mobile Section-->
+        <div class="mobile">
+            <div>
+                <a href="mainwebsite.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Navigation Bar - Burger -->
+        <div class="burger-mobile">
+            <div class="logo-and-burger">
+                <a href="mainwebsite.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+                <button id="button"><img src="https://www.svgrepo.com/show/448513/menu.svg" alt="menu icon" class="burger-icon"></button>
+            </div>
+            <div class="burger-nav" style="display:none">
+                <a href="method.html">Method</a>
+                <a href="#Exercises">Exercises</a>
+                <a href="#Explanations">Explanations</a>
+                <a href="speaking.html">Speaking</a>
+                <a href="membership.html">Membership</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+                <a class="last-a" href="login.html" class="login">Login</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Section of the Website -->
+    <main>
+        <div class="speaking-banner">
+            <p>Do you want to improve your <br> speaking?</p>
+        </div>
+        <div class="padding-container">
+            <div class="speaking-container">
+                <div class="speaking-text">
+                    <h2>Improve your English with a <br> British Council approved tutor</h2>
+                    <hr>
+                    <p>Perfect English Grammar doesn't offer speaking lessons, unfortunately!</p>
+                    <p>So, we've partnered with <a href="https://tutors.englishscore.com/gen/usd/?sc=AFF_Global_PEG-SITE">EnglishScore Tutors.</a> <br>
+                    It's the British Council's official 1:1 tutoring platform. <br>
+                    You can practise with a professional English tutor.</p>
+                    <p>As a reader of Perfect English Grammar, you can try your <a href="https://tutors.englishscore.com/gen/usd/?sc=AFF_Global_PEG-SITE">first session for $1.</a></p>
+                    <p>I honestly think they are really good!</p>
+                </div>
+                <div class="speaking-pic">
+                    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+            </div>
+        </div>
+        <div class="lesson-banner">
+            <h1>Try your first lesson now for $1!</h1>
+            <br>
+            <br>
+            <a href="https://tutors.englishscore.com/gen/usd/?sc=AFF_Global_PEG-SITE"><button class="button">Try a $1 lesson</button></a>
+        </div>
+    </main>
+
+    <!-- Footer section-->
+    <footer class="speaking-footer">
+        <div class="logo-banner">
+            <img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="bottom-logo">
+            <p>Made with love in London</p>
+        </div>
+    </footer>
+</body>
+</html>
