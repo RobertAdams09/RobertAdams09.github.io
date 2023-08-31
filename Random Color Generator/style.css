@@ -1,0 +1,126 @@
+/*  Universal Styles */
+
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: #E1E5EE;
+    color: #000;
+}
+
+/* Navigation Styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B998B;
+    color: #FFF;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+nav .nav-container div {
+    display: inline-block;
+}
+
+.title {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #91C7B1;
+}
+
+.links h3 {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.links a:hover {
+    color: #2191FB;
+}
+
+/* Main Section Styles */
+.main-container {
+    padding-top: 12rem;
+}
+
+.main-container h1 {
+    background-color: #000;
+    color: #FFF;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.button {
+    margin-top: 2rem;
+    padding: 0.75rem;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+}
+
+button:hover {
+    font-size: 0.90rem;
+    background-color: #2191FB;
+}
+
+/* Responsive Design for the Website */
+/* First Responsive from 855px to 710px */
+@media only screen and (max-width: 855px) and (min-width: 710px) {
+    .links h3,
+    .title {
+        padding: 0 0.5rem;
+    }
+
+    .main-container h1 {
+        width: 680px;
+    }
+}
+
+/* Second Responsive from 710px to 0px */
+@media only screen and (max-width: 710px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        background-color: #2191FB;;
+    }
+
+    .links h3 {
+        padding: 0 3px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .links a:hover {
+        color:#1B998B;
+    }
+
+    .main-container h1 {
+        font-size: 1.6rem;
+        width: 95%;
+    }
+
+    button:hover {
+        background-color:#1B998B;
+    }
+}
