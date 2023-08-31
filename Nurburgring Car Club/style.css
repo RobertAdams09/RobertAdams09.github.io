@@ -1,0 +1,666 @@
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+:root {
+    --main-font-type: 'Nanum Gothic', sans-serif;
+    --headings-font-type: 'Cabin', sans-serif;
+    --comments-font-type: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-family: var(--main-font-type); 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(219, 230, 240);
+    line-height: 1.5;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font-type); 
+}
+
+h1 { 
+    color: firebrick;
+}
+
+h3 {
+    font-size: 1.10rem;
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    z-index: 1;
+    top: -10.25rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(https://live.staticflickr.com/4133/5061068074_7a9f26535f_z.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+    transition: top 1s ease-out 100ms;
+}
+
+nav h1 {
+    font-size: 1.75rem;
+    text-align: right;
+    padding-right: 2.5rem;
+    color: firebrick;
+}
+
+nav:hover {
+    top: 0;
+}
+
+nav .hover-content {
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px plum;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    transition: color 1s linear 100ms;
+    transform: skew(8deg);
+}
+
+nav .icon {
+    height: auto;
+    width: 5.625rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    nav ul li {
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    nav a {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        top: -12.50rem;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    nav {
+        top: -15.50rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav a {
+        font-size: 1.15rem;
+    }
+}
+
+/* Header - Main Banner */
+header {
+    margin-top: 5rem;
+}
+.banner {
+    background-image: url(https://images.unsplash.com/photo-1656683223698-1a2370846d05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.banner h2 {
+    text-align: left;
+    padding-top: 28rem;
+    padding-left: 2rem;
+    color: firebrick;
+    font-size: 2rem;
+}
+
+.banner h1 {
+    text-align: left;
+    color: firebrick;
+    font-size: 2.25rem;
+    padding-left: 6rem;
+    text-shadow: 1px 1px 3px silver;
+}
+
+@media only screen and (max-width: 1150px) {
+    .banner h2 {
+        padding-top: 32.75rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .banner h2 {
+        padding-top: 20rem;
+    }
+
+    .banner h1 {
+        padding-top: 10rem;
+    }
+}
+
+/* Main Section of the Website */
+
+/* About Us Main Section*/
+.About-NCC-Main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin: 1rem 0;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    align-items: center;
+}
+
+.main-box {
+    padding: 1rem;
+    align-items: center;
+}
+
+.main-box h3 {
+    font-size: 1.40rem;
+}
+
+.car-park {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 550px) {
+    .About-NCC-Main {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main-box h3 {
+        font-size: 1.20rem;
+    }
+}
+
+/* About Us Secondary Section */
+.About-NCC-Secondary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 1rem 0;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 1rem;
+    align-items: flex-start;
+}
+
+.picture {
+    width: 100%;
+    height: 18.75rem;
+}
+
+.box {
+    padding: 0 0.5rem;
+    align-items: center;
+}
+
+
+/* Comment Sections - these rules applies to all comments */
+.Comment {
+    font-family: var(--comments-font-type);
+    font-size: 1.5rem;
+    color: firebrick;
+    text-align: right;
+    padding: 2rem 1rem;
+}
+
+.member-details {
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+    .Comment {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .member-details {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
+
+/* Our Members Section */
+.Members {
+    background-image: url(https://e0.365dm.com/15/12/1600x900/nurburgring-logo_3389565.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: yellow;
+    filter: brightness(0.9);
+    margin: 1rem 0;
+}
+
+.membersheading h3 {
+    padding: 2rem 1rem 0 1rem;
+    font-size: 1.40rem;
+}
+
+.memberspicture {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    width: 30%;
+    margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.name {
+    color: ivory;
+}
+
+.memberpic,
+.membercar {
+    width: 90%; 
+    height: 15.625rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .member {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .member {
+        width: 100%;
+    }
+
+    .membersheading h3 {
+        font-size: 1.20rem;
+    }
+}
+
+/* Events and Trackdays Section*/
+.academy h3,
+.meetings h3, 
+.trackdays h3 {
+    font-size: 1.40rem;
+    padding: 0 0.5rem;
+}
+
+.academy {
+    margin-bottom: 3rem;
+    border: solid 1px black;
+    border-radius: 25px;
+    background: linear-gradient(40deg, #F05D3C, #D9F7FA, #0197F6);
+}
+.trackdays {
+    margin-bottom: 1rem;
+    border: solid 1px black;
+    border-radius: 25px;
+    background: linear-gradient(25deg, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.meetings {
+    margin-bottom: 3rem;
+    border: solid 1px black;
+    border-radius: 25px;
+    background: linear-gradient(0.35turn, #00A6ED, #F4EBE8, #E0ACD5);
+}
+
+.academy-pictures,
+.meetings-pictures,
+.trackdays-pictures {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.academy-pic,
+.meetings-pic,
+.trackdays-pic {
+    width: 45%;
+    margin: 0.85rem;
+}
+
+.academy-big-pic,
+.meetings-big-pic,
+.trackdays-big-pic {
+    width: 92%;
+}
+
+.one,
+.two {
+    width: 100%;
+    height: 15.625rem;
+}
+
+.three-big {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .academy-pic,
+    .meetings-pic,
+    .trackdays-pic {
+        width: 100%;
+    }
+    .academy h3,
+    .meetings h3, 
+    .trackdays h3 {
+        font-size: 1.20rem;
+    }
+}
+
+/* How to Join The Club Section */
+.how-to-join {
+    display: block;
+    align-items: center; 
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 2.5rem;
+    background: linear-gradient(45deg, #00A6ED, #F4EBE8, #00A6ED);
+    top: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.how-to-join h3 {
+    font-size: 1.40rem;
+}
+
+.how-to-join ol {
+    list-style: none;
+    counter-reset: item;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.how-to-join li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    font-size: 1.10rem;
+}
+
+.how-to-join li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #E0ACD5;
+    border-radius: 50%;
+    color: black;
+    width: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* FAQ Section */
+.faq h3{
+    font-size: 1.40rem;
+}
+.faq-content {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-size: 1.20rem;
+}
+
+.faq-answer {
+    display: none; 
+    font-size: 1.10rem;
+}
+
+.faq-answer span {
+    font-weight: bold;
+    font-style: italic;
+    color: firebrick;
+}
+
+.faq-question:hover + .faq-answer {
+    display: block;
+}
+
+@media only screen and (max-width: 700px) {
+    .faq-answer {
+        font-size: 1rem;
+    }
+}
+
+/* Gallery Section */
+.gallery-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    max-width: 24.90%;
+    padding: 0.5rem 0.02rem;
+}
+
+.column img {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .column {
+        flex: 50%;
+        max-width: 49.90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C7CEDB;
+    color: #02020B;
+    padding: 0 1rem;
+}
+
+/* Footer Left Side */
+.links-contact-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.links-contact-left-side a {
+    padding: 0.40rem 0;
+}
+
+.links-contact-left-side h3 {
+    font-size: 1.20rem;
+}
+
+.fb,
+.twitter,
+.instagram {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Footer Center Part - Ring-logo */
+.ring-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 1rem;
+    width: 500px;
+    height: 250px;
+}
+
+/* Footer Right Side */
+.motto-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.motto-right-side span {
+    color: #522A27;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.logo-mobile {
+    display: none;
+    padding: 0.5rem;
+    width: 150px;
+    height: 75px;
+}
+
+@media only screen and (max-width: 850px) {
+    .links-contact-left-side span {
+        display: none;
+    }
+
+    .fb,
+    .twitter,
+    .instagram {
+        display: inline;
+    }
+}
+
+/* Footer - Center Logo - Mobile */
+@media only screen and (max-width: 1200px) {
+    .logo {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .logo {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .logo {
+        display: none;
+    }
+}
+
+/* Footer - Right Logo - Mobile */
+@media only screen and (max-width: 850px) {
+    .logo-mobile {
+        display: block;
+    }
+
+    .motto-right-side {
+        border-left: solid 2px #02182B;
+        border-right: solid 2px #02182B; 
+        border-radius: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #E0FBFC;
+        color: #291711;
+    }
+
+    .motto-right-side span {
+        color: #0E0E52;
+    }
+}
