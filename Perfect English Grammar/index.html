@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./mainwebsite.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <script src="./mainwebsite.js" defer></script>
+    <title>Perfect English Grammar</title>
+</head>
+
+<body>
+    <!-- Popup section -->
+    <div id="popup-section">
+        <div id="popup">
+            <div class="interact-logo">
+                <a href="https://www.tryinteract.com/?utm_source=Powered%20By%20Link"><img src="https://www.svgrepo.com/show/401966/information.svg" alt="Interact quiz logo" class="i-logo"></a>
+            </div>
+            <div class="popup-content">
+                <p>What's my English grammar level?</p>
+                <button class="access-quiz-btn" type="button">Take the free quiz here!</button>
+            </div>
+            <div class="toggle-off">
+                <button class="x-button" type="button">
+                    <p class="backslash"></p>
+                    <p class="forwardslash"></p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Quiz Section - Appears only after clicking the button -->
+    <!-- X - Button Section-->
+    <div class="overlay" style="display:none">
+        <div class="toggle-off-quiz">
+            <button class="close-button" type="button">
+                <p class="backslash-quiz"></p>
+                <p class="forwardslash-quiz"></p>
+            </button>
+        </div>
+        <div class="quiz-container">
+            <h1>Which is correct?</h1>
+            <div class="buttons-container">
+                <button class="quiz-answer1" id="btns" type="button"><p></p>Are you live in London?</button>
+                <button class="quiz-answer2" id="btns" type="button"><p></p>Do you live in London?</button>
+                <button class="quiz-answer3" id="btns" type="button"><p></p>Be you live in London?</button>
+                <button class="quiz-answer4" id="btns" type="button"><p></p>I don't know the answer to this question!</button>
+            </div>
+            <h3 class="question-id">1/20</h3>
+        </div>
+    </div>   
+
+    <!-- Navigation bar - Desktop Section-->
+    <nav>
+        <div class="desktop">
+            <div>
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Navigation Bar - Mobile Section-->
+        <div class="mobile">
+            <div>
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Navigation Bar - Burger -->
+        <div class="burger-mobile">
+            <div class="logo-and-burger">
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+                <button id="button"><img src="https://www.svgrepo.com/show/448513/menu.svg" alt="menu icon" class="burger-icon"></button>
+            </div>
+            <div class="burger-nav" style="display:none">
+                <a href="method.html">Method</a>
+                <a href="#Exercises">Exercises</a>
+                <a href="#Explanations">Explanations</a>
+                <a href="speaking.html">Speaking</a>
+                <a href="membership.html">Membership</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+                <a class="last-a" href="login.html" class="login">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+    <header>
+        <h1>Welcome to Perfect <span>English Grammar</span></h1>
+        <!-- Search Bar-->
+        <div class="search-element">
+            <form class="search" action="action_page.php">
+                <input type="text" placeholder="" name="search">
+                <button type="submit"><i class="fa fa-search"></i>search the website</button>
+            </form>
+        </div>
+        <h2>This is not an actual Perfect English Grammar website - I have recreated the website to practice the HTML, CSS and JavaScript skills</h2>
+    </header>
+    <!-- Main content of the Website -->
+    <main>
+        <!-- Free materials section-->
+        <div class="materials">
+            <h1>Start studying with our free English materials</h1>
+            <div class="material-cards">
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-14.png.pagespeed.ic.4HbiL11bM8.jpg" alt="grammar exercises">
+                    <p>grammar exercises</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-16.png.pagespeed.ic.q11LJ8d6eq.jpg" alt="grammar explanations">
+                    <p>grammar explanations</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-17.png.pagespeed.ic.0Tdbnn8UbX.jpg" alt="grammar pdfs">
+                    <p>grammar pdfs</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-4.png.pagespeed.ic.uTiIeSDYe0.png" alt="verb tenses">
+                    <p>verb tenses</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-9.png.pagespeed.ic.KSEbFJ0Hno.jpg" alt="reported speech">
+                    <p>reported speech</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-6.png.pagespeed.ic.01I8AO4ZUY.jpg" alt="modal verbs">
+                    <p>modal verbs</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-1.png.pagespeed.ic.FaHFdb6RuJ.jpg" alt="the passive">
+                    <p>the passive</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-11.png.pagespeed.ic.EMi0luW5LX.jpg" alt="conditionals">
+                    <p>conditionals</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-3.png.pagespeed.ic.6hdwEk3LNb.jpg" alt="phrasal verbs">
+                    <p>phrasal verbs</p>
+                </div>
+            </div>
+        </div>
+        <!-- English Courses section-->
+        <div class="courses">
+            <h1>Learn more with out complete English courses</h1>
+            <div class="courses-cards">
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xa1-thumbnail-2.png.pagespeed.ic.ZL-YxexgtO.png" alt="complete beginner grammar">
+                    <p>complete beginner grammar</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xa2-thumbnail-2.png.pagespeed.ic.v0i8UdCp-9.png" alt="complete pre-intermediate grammar">
+                    <p>complete pre-intermediate grammar</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xb1-thumbnail-2.png.pagespeed.ic.wBaRS8Z-Uv.png" alt="complete intermediate grammar">
+                    <p>complete intermediate grammar</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xb2-thumbnail-2.png.pagespeed.ic.WE3hHpTUu1.png" alt="complete upper-intermediate grammar">
+                    <p>complete upper-intermediate grammar</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xtenses-thumbnail-2.png.pagespeed.ic.qNcwuUw-Ab.png" alt="tense deep dive">
+                    <p>tenses deep dive</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xphrasal-verbs-1-thumbnail-2.png.pagespeed.ic.EO3K41Nwdn.png" alt="learn 150 advanced phrasal verbs">
+                    <p>learn 150 advanced phrasal verbs</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xarticles-thumbnail-2.png.pagespeed.ic.ItXHDCztW6.png" alt="articles deep dive">
+                    <p>articles deep dive</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xmodals-thumbnail-2.png.pagespeed.ic.6iYawQ7A0Z.png" alt="modals deep dive">
+                    <p>modals deep dive</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xidioms-1-thumbnail-2.png.pagespeed.ic.g5DgO9sM7H.png" alt="speak sophisticated english">
+                    <p>speak sophisticated english</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xconditionals-thumbnail-2.png.pagespeed.ic.6KlUhl_Jfd.png" alt="conditionals deep dive">
+                    <p>conditionals deep dive</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xcollocations-1-thumbnail-2.png.pagespeed.ic.Qr1UOUulri.png" alt="speak natural english">
+                    <p>speak natural english</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.perfect-english-grammar.com/image-files/xlistening-1-thumbnail-2.png.pagespeed.ic.zgxu6CmFCA.png" alt="transform your listening">
+                    <p>transform your listening</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Subscription section -->
+    <div class="subscription-section">
+        <div class="sub-banner">
+            <h1>Get free English lessons by email</h1>
+            <form class="emailbar" action="action_page.php">
+                <input type="text" placeholder="Email Address" name="search">
+                <label for="englishlevel"></label>
+                <select id="englishlevel" name="englishlevel">
+                    <option value="Please choose your English level">Please choose your English level</option>
+                    <option value="I'm a beginner (A1)">I'm a beginner (A1)</option>
+                    <option value="I'm elementary level (A2)">I'm elementary level (A2)</option>
+                    <option value="I'm intermediate (B1)">I'm intermediate (B1)</option>
+                    <option value="I'm upper-intermediate (B2)">I'm upper-intermediate (B2)</option>
+                    <option value="I'm advanced (C1/C2)">I'm advanced (C1/C2)</option>
+                    <option value="I'm a teacher">I'm a teacher</option>
+                    <option value="I don't know my level">I don't know my level</option>
+                </select>
+                <button type="submit"><i class="fa fa-search"></i>Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer section-->
+    <footer class="main-footer">
+        <div class="logo-banner">
+            <img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="bottom-logo">
+            <p>Made with love in London</p>
+        </div>
+    </footer>
+
+    <!-- Fixed bar section-->
+    <div class="fixed-bar">
+        <div class="fixed-bar-content">
+            <a href="./membership.html">
+                <p>Master English grammar for $19 per month. Click here to learn more.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

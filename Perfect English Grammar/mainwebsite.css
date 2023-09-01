@@ -1,0 +1,2159 @@
+/* Universal Styles */
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.6;
+}
+
+:root {
+    --main-font-type: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--main-font-type);
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Popup section */
+#popup-section {
+    display: none;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #43AA8B;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#popup {
+    display: inline;
+}
+
+.interact-logo {
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.i-logo {
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 8px 10px 0 10px;
+}
+
+.popup-content p {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    padding: 8px 0;
+    margin: 5px 2px;
+}
+
+.popup-content .access-quiz-btn {
+    background-color: #000;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 8px 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.popup-content .access-quiz-btn:hover {
+    transform: scale(1.05);
+}
+
+/* The X-Button to turn off the popup-section */
+.toggle-off {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0;
+    background-color: #85c9b5; 
+    width: 50px;
+    height: 50px;
+    margin-top: -52px;
+}
+
+.x-button {
+    width: 50px;
+    height: 50px;
+    background-color: #85c9b5;
+    border: none;
+}
+
+.x-button:hover {
+    cursor: pointer;
+    background-color: #a4c5bb;
+}
+
+.backslash {
+    width: 15px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #eaeaeb;
+    rotate: -45deg;
+}
+
+.forwardslash {
+    width: 15px;
+    height: 3px;
+    margin: -3px auto;
+    background-color: #eaeaeb;
+    rotate: 45deg;
+}
+
+/* Hidden Quiz Section - Appears only after clicking the button */
+/* Overlay of the Quiz Section */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.quiz-container h1, h3 {
+    font-weight: 300;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#btns {
+    display: flex;
+    background-color: inherit;
+    text-align: left;
+    font-family: var(--main-font-type);
+    border-radius: 5px;
+    border: transparent;
+    font-size: 1.25rem;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 15px 5px;
+}
+
+#btns:hover {
+    background-color: rgb(179, 179, 167);
+}
+
+#btns p {
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 0; 
+    margin-right: 15px;
+    padding: 0;
+}
+
+.quiz-container .question-id {
+    font-size: 1rem;
+    font-weight: 200;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/* X - Button Section */
+.toggle-off-quiz {
+    position: absolute;
+    width: 100%;
+}
+
+.close-button {
+    float: right;
+    width: 60px;
+    height: 70px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: transparent;
+}
+
+.close-button:hover {
+    opacity: 1;
+}
+
+.backslash-quiz {
+    width: 50px;
+    height: 6px;
+    rotate: -45deg;
+    margin: -5px auto;
+    background-color: #fff;
+}
+
+.forwardslash-quiz {
+    width: 50px;
+    height: 6px;
+    rotate: 45deg;
+    margin: -6px auto;
+    background-color: #fff;
+}
+
+/* Hidden Quiz Section - Correct Answer and Incorrect Answer*/
+.quiz-correct {
+    display: none;
+    flex-direction: column;
+    color: #fff;
+    width: 800px;
+    background-color: #6ed67c;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quiz-incorrect {
+    display: none;
+    flex-direction: column;
+    color: #fff;
+    width: 800px;
+    background-color: rgb(228, 80, 81);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quiz-correct h1,
+.quiz-incorrect h1 {
+    font-size: 2.10rem;
+    font-weight: 300;
+}
+.quiz-correct h3,
+.quiz-incorrect h3 {
+    font-size: 1.60rem;
+    font-weight: 300;
+}
+
+.correct-inner,
+.incorrect-inner {
+    padding: 15px 10px 25px 10px;
+}
+
+.correct-inner p,
+.incorrect-inner p {
+    font-size: 1.20rem;
+}
+
+.quiz-correct .upper-case,
+.quiz-incorrect .upper-case {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.quiz-correct .next-btn { 
+    font-family: var(--main-font-type);
+    background-color: #3abe4c;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.50rem;
+    font-weight: 300;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.quiz-correct .next-btn:hover {
+    background-color: #1d942c;
+}
+
+.quiz-incorrect .next-btn {
+    font-family: var(--main-font-type);
+    background-color: rgb(224, 35, 35);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.50rem;
+    font-weight: 300;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.quiz-incorrect .next-btn:hover {
+    background-color: rgb(163, 30, 30); 
+}
+
+.quiz-correct .question-id {
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.quiz-incorrect .question-id {
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/* Naviagation Bar - Desktop Section */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.logo {
+    width: 25%;
+    margin: 2em 4em 1em 0;
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+nav .desktop {
+    background-color: #FFF;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #43AA8B;
+    text-decoration: underline;
+}
+
+nav .login {
+    cursor: pointer;
+    color: #DD6031;
+}
+
+/* Navigation Bar - Mobile Section */
+.mobile {
+    display: none;
+}
+
+/* Navigation Bar - Burger Section */ 
+.burger-mobile,
+.burger-nav {
+    display: none;
+}
+
+/* Banner with search bar */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+header h1 span {
+    color: #43AA8B;
+}
+
+.search-element {
+    width: 90%;
+}
+
+/* Search Bar */
+form.search input[type=text] {
+    background-color: #FFF;
+    vertical-align: middle;
+    width: 45%;
+    margin: 0.25em;
+    border: 1px solid #000;
+    height: 2.5em;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+form.search button {
+    cursor: pointer;
+    background-color: #43AA8B;
+    margin: 0.25em;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1em;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+}
+
+form.search button:hover {
+    background-color: #1e8566;
+}
+
+h2 {
+    color: red;
+}
+
+/* Main content of the Website */
+/* Free materials section */
+.materials,
+.courses {
+    display: block;
+    text-align: center;
+    background-color: #FFF;
+    width: 100%;
+    font-size: 16px;
+}
+
+.materials h1,
+.courses h1 {
+    font-size: 1.6em;
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+.material-cards,
+.courses-cards {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 1em;
+    grid-row-gap: 0.3em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    background-color: #43AA8B;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.5em 0;
+    margin-top: -0.5em;
+}
+
+.card:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/* English courses section */
+.courses {
+    display: block;
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Subscription section */
+.subscription-section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5em 0;
+    background-image: url(https://images.unsplash.com/photo-1503945438517-f65904a52ce6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+/* First banner with the subscription button */ 
+.sub-banner {
+    padding-top: 15%;
+}
+
+.sub-banner h1 {
+    color: #FFF;
+    font-weight: 200;
+    padding-left: 8%;
+    padding-bottom: 0.5%;
+}
+
+/* Email Search Bar */
+form.emailbar input[type=text] {
+    background-color: #FFF;
+    vertical-align: middle;
+    margin: 0.33em 0.3em 0.33em 0.3em;
+    border: 2px solid #000;
+    height: 2.5em;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding-right: 3em;
+    padding-left: 1em;
+}
+
+/* Dropdown englishlevel */
+form.emailbar select {
+    background-color: #FFF;
+    vertical-align: middle;
+    margin: 0.33em 0.3em;
+    border: 2px solid #000;
+    height: 2.88em;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    padding-right: 3em;
+    padding-left: 1em;
+}
+
+/* Button styles */
+form.emailbar button {
+    background-color: #43AA8B;
+    color: #FFF;
+    vertical-align: middle;
+    border: none;
+    border-radius: 6px;
+    margin: 0.33em 0.3em;
+    height: 2.88em;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0 1.5em;
+}
+
+form.emailbar button:hover {
+    background-color:#1e8566;
+}
+
+/* Footer Section */
+.main-footer {
+    background-color: #000;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    height: 45vh;
+}
+
+.logo-banner img {
+    width: 40px;
+    height: 40px;
+    padding: 25px 0;
+}
+
+.logo-banner p {
+    color: #FFF;
+}
+
+/* Fixed bar section */
+.fixed-bar {
+    position: fixed;
+    padding: 0 1em;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.fixed-bar a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.fixed-bar-content p:hover {
+    color: #43AA8B;
+    cursor: pointer;
+}
+
+/* Main Section of the Method Website */
+.method-banner {
+    background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font-type);
+    height: 300px;
+    text-align: center;
+    padding: 140px 0 40px 0;
+}
+
+.method-banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.method-banner p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Method Believe Section */
+.padding-container {
+    padding: 75px 20px;
+}
+
+.method-believe {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-believe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.text-believe a {
+    color: orange;
+}
+
+.text-believe h1 {
+    font-size: 1.5rem; 
+}
+
+.pic-believe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.pic-believe img {
+    width: 60%;
+}
+
+/* Step 1 and 2 Sections */
+.padding-container-color {
+    padding: 75px 20px;
+    background-color: #edf3f1;
+}
+.step-1,
+.step-2 {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #000;
+}
+
+.step-1-text {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.step-1-text h1 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    padding: 0 10px;
+}
+
+.step-1-text p {
+    font-size: 1.05rem;
+    padding: 0 10px;
+}
+
+.step-1-points {
+    text-align: center;
+    width: 25%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.step-1-points span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.icons {
+    width: 100%;
+}
+
+/* Footer Section of the Method Website */
+.footer-banner {
+    background-color: #03865f;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+}
+
+.padding-footer {
+    padding: 75px 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-text a {
+    color: orange;
+    font-size: 1.05rem;
+}
+
+/* Main Section of the Speaking Website */
+.speaking-banner {
+    background: linear-gradient(rgba(250,250,250, 0.3), rgba(250,250,250, 0.6)), url(https://images.unsplash.com/photo-1543871595-e11129e271cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font-type);
+    height: 280px;
+    text-align: center;
+    padding: 70px 0 40px 0;
+    opacity: 0.8;
+}
+
+.speaking-banner p {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+/* Speaking text and picture */
+.speaking-container {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.speaking-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 1.10rem;
+}
+
+.speaking-container .speaking-text h2 {
+    font-size: 1.90rem;
+    color: #000;
+}
+
+.speaking-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.speaking-pic img {
+    width: 90%;
+    height: 100%;
+}
+
+.speaking-text hr {
+    margin-left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #43AA8B;
+}
+
+.speaking-text a {
+    text-decoration: none;
+    color: #f1602b;
+    cursor: pointer;
+}
+
+/* One dollar lesson banner */
+.lesson-banner {
+    background-color: #f7f1f1;
+    width: 100%;
+    height: 200px;
+    padding: 60px 0;
+    margin: 0 auto;
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.lesson-banner h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.lesson-banner button {
+    border: none;
+    font-weight: 800;
+    font-size: 1.25rem;
+    background-color: #fcad04;
+    border-radius: 50px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.speaking-footer {
+    background-color: #000;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    height: 45vh;
+}
+
+.logo-banner img {
+    width: 40px;
+    height: 40px;
+    padding: 25px 0;
+}
+
+.logo-banner p {
+    color: #FFF;
+}
+
+/* Main Section of the Membership Website */
+/* Banner Section */
+.membership-banner {
+    background-image: url(https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 480px;
+    padding: 150px 10px 120px 10px;
+    line-height: 1;
+}
+
+.banner-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.banner-title {
+    padding-bottom: 25px;
+    line-height: 1.3;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+}
+
+.banner-text h3 {
+    font-size: 1.45rem;
+}
+
+.banner-text button {
+    line-height: 24px;
+    border-radius: 40px;
+    border: none;
+    background-color: #43AA8B;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.banner-text button:hover {
+    transform: scale(1.10);
+}
+
+.banner-text h6 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.15rem;
+    letter-spacing: .2rem;
+}
+
+/* Results Section of the Website */
+.padding-container-color {
+    padding: 75px 20px;
+    background-color: #e6f1ee;
+}
+
+.results-container {
+    display: flex;
+    width: 95%;
+    color: #000;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.results-text {
+    width: 100%;
+}
+
+.results-text h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.70rem;
+    color: #000;
+}
+
+.results-text ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 0 3rem;
+}
+
+.results-text li {
+    line-height: 2.5;
+}
+
+/* Courses Included Section of the Website */
+.included-container {
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.results-grammar {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+.results-general {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+}
+.grammar-pic,
+.general-pic {
+    width: 100%;
+    height: 120px;
+}
+
+/* Second Part of Course Included - Additonal Perks */
+.additional-text {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.membership-hr {
+    width: 100px;
+    height: 2px;
+    background-color: #3abe4c;
+    
+}
+
+.additional-perks {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+.additional-perks img {
+    width: 100%;
+    height: 170px;
+}
+
+/* Cancellation Section */
+.cancellation-container {
+    background-color: #ebf3f1;
+    color: #000;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.cancellation-container h1 {
+    font-size: 1.65rem;
+}
+
+/* Membership Video */
+.video-container {
+    width: 100%;
+    align-items: left;
+    padding: 15px;
+}
+
+.video-settings {
+    background-image: url("https://i.ytimg.com/vi/JjxgO9-2-DM/maxresdefault.jpg");
+    width: 100%;
+    height: auto;
+}
+
+/* First and Second Reviews Section */
+.reviews-container {
+    display: flex;
+    max-width: 1080px;
+    color: #000;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.reviews-text {
+    width: 33%;
+    text-align: center;
+    font-weight: 400;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+}
+
+.reviews-text h2 {
+    color: #000;
+}
+
+/* Teacher Introduction Section */
+.teacher-pic img {
+    width: 90%;
+    height: 400px;
+    padding: 10px 15px;
+}
+
+.teacher-info {
+    width: 90%;
+    padding: 10px 15px;
+    font-weight: normal;
+}
+
+.teacher-info hr {
+    margin-left: 0;
+}
+
+/* FAQ Section */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-title {
+    text-align: center;
+}
+
+.faq-accodrion {
+    padding: 10px;
+    width: 100%;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6,
+.question7,
+.question8,
+.question9,
+.question10 {
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    padding: 25px 50px 25px 25px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-left: 5px solid #43AA8B; 
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    font-size: 18px;
+    font-weight: 800;
+    outline: none;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.plus-horizontal {
+    cursor: pointer;
+    float: right;
+    background-color: #43AA8B;
+    width: 10px;
+    height: 4px;
+    margin-top: 13px;
+    margin-bottom: 0;
+    margin-right: -25px;
+}
+
+.plus-vertical {
+    cursor: pointer;
+    float: right;
+    background-color: #43AA8B;
+    width: 4px;
+    height: 10px;
+    margin-right: -22px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.question1:hover,
+.question2:hover,
+.question3:hover,
+.question4:hover,
+.question5:hover,
+.question6:hover,
+.question7:hover,
+.question8:hover,
+.question9:hover,
+.question10:hover {
+    background-color: #43AA8B;
+}
+
+.answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5,
+.answer6,
+.answer7,
+.answer8,
+.answer9,
+.answer10 {
+    background-color: white;
+    text-align: left;
+    padding: 25px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    font-size: 1rem;
+}
+
+/* Random Review */
+.random-container {
+    background-color: #ebf3f1;
+    color: #000;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 75px 20px;
+}
+
+.random-container p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Choose Your Plan Section */
+.padding-container-dark-color {
+    padding: 75px 20px;
+    background-color: #455a52;
+}
+
+.plan-title {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff; 
+    padding-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.included-container-white {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    margin: 0 15px;
+    border-top: 4px solid #43AA8B;
+}
+
+.included-container-white h3 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.included-container-white .prices {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color:#43AA8B;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.included-container-white ul {
+    margin: 0 1.5rem 0 2rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.purchase-btn {
+    margin: 1.5rem auto 3rem;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #43AA8B;
+    border: 1px solid #43AA8B;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.purchase-btn:hover {
+    transform: scale(1.05);
+}
+
+/*  Main Section of the Courses Website */
+/* Banner Section */
+.courses-banner {
+    background-image: url(https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    height: 550px;
+    padding: 75px 10px 20px 10px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+    max-width: 1000px;
+    padding: 0 10px;
+}
+
+.banner-text h1 {
+    font-size: 3.75rem;
+}
+
+.banner-text h4 {
+    font-size: 1.5rem;
+}
+
+.banner-text h6 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.15rem;
+}
+
+/* Grammar Course Section */
+.grammar-container,
+.advanced-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: #000;
+}
+
+.courses-hr {
+    width: 100px;
+    height: 2px;
+    background-color: #03865f;
+}
+
+.grammar-container .grammar-points h2 {
+    color: #000;
+}
+
+.advanced-container h2 {
+    color: #000;
+}
+
+.grammar-text,
+.advanced-text {
+    text-align: center;
+}
+
+.grammar-points {
+    text-align: center;
+    width: 20%;
+    padding: 10px 20px;
+}
+
+.grammar-points img,
+.advanced-points img {
+    width: 100%;
+    height: 120px;
+}
+
+.grammar-points h2,
+.advanced-points h2 {
+    font-size: 1.35rem;
+}
+
+.grammar-points p,
+.advanced-points p {
+    font-weight: bold;
+}
+
+.grammar-points a,
+.advanced-points a {
+    color: #f85f07;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Advanced Courses Section */
+.advanced-points {
+    text-align: center;
+    width: 25%;
+    padding: 10px 20px;
+}
+
+.advanced-points button {
+    border-radius: 40px;
+    border: none;
+    background-color: #43AA8B;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    line-height: 24px;
+    margin-bottom: 10px; 
+}
+
+.advanced-points button:hover {
+    transform: scale(1.05);  
+}
+
+/* Learn More Section of the Website */
+.learn-more {
+    background-color: #43AA8B;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.learn-more h2 {
+    font-size: 1.40rem;
+    color: #fff;
+}
+
+.learn-more button {
+    border-radius: 40px;
+    border: none;
+    background-color: #69b9a1;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.learn-more button:hover {
+    transform: scale(1.05);
+}
+
+/* Main Section of the Contact Website */
+.contact-banner {
+    background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+.contact-text h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.contact-text p {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: lighter;
+}
+
+.contact {
+    display: block;
+    width: 80%;
+    text-align: left;
+    margin: 1.5% 2.5%;
+    font-size: 1rem;
+    color: #000;
+}
+
+.contact p {
+    padding-left: 5%;
+}
+
+/* Contact Footer Section */
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 145px;
+    height: 50vh;
+}
+
+.logo-banner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.logo-banner img {
+    width: 40px;
+    height: 40px;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+
+.logo-banner p {
+    color: #FFF;
+    margin-bottom: 4rem;
+}
+
+/* Contact Navigation Section */
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+    width: 5rem;
+    padding: 1.25rem;
+}
+
+.contact-nav a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN OF THE WEBSITE */
+/* Responsiveness of the popop-content */
+@media only screen and (max-width: 900px) {
+    .close-button {
+        height: 50px;
+    }
+    
+    .backslash-quiz {
+        width: 40px;
+        height: 6px;
+        rotate: -45deg;
+        margin: -5px auto;
+        background-color: #fff;
+    }
+    
+    .forwardslash-quiz {
+        width: 40px;
+        height: 6px;
+        rotate: 45deg;
+        margin: -6px auto;
+        background-color: #fff;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #popup-section {
+        height: 80px;
+        line-height: 15px;
+    }
+
+    .toggle-off {
+        height: 80px;
+        margin-top: -76px;
+    }
+
+    .i-logo, 
+    .x-button {
+        height: 80px;
+        margin: 0;
+        padding: 0 5px;
+    }
+
+    .popup-content p {
+        display: block;
+    }
+
+    .popup-content .access-quiz-btn {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .toggle-off {
+        margin-top: -76px;
+    }
+}
+
+/* Responsiveness of the Hidden Quiz Section */
+@media only screen and (max-width: 830px) {
+    .quiz-container {
+        width: 95%;
+    }
+
+    .buttons-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .buttons-container {
+        width: 95%;
+        margin: 0 5px;
+    } 
+
+    .quiz-container h1 {
+        font-size: 1.75rem;
+    }
+
+    #btns {
+        font-size: 1.10rem;
+    }
+}
+
+/* Responsiveness of the Mobile Navigation Bar */
+/* Navigation Bar - Smaller Block Navigation */
+@media only screen and (max-width: 800px) {
+    nav .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+        margin: 1em 2.5em;
+    }
+
+    .mobile ul li {
+        margin: 0 0.5em 0 0;
+        font-weight: bold;
+        line-height: 3em;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    nav a {
+        color: #000;
+    }
+}
+
+/* Navigation Bar - Burger */
+@media only screen and (max-width: 500px) {
+    nav .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .burger-mobile {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .logo-and-burger {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .logo {
+        margin: 0.10em 0.5em;
+    }
+
+    #button {
+        cursor: pointer;
+        margin: auto 1em;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .burger-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger-nav {
+        width: 55%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3em;
+    }
+
+    .burger-nav a {
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+    }
+
+    .burger-nav .last-a {
+        border-bottom: none;
+        color: #DD6031;
+    }
+}
+
+/* Responsiveness of the Search Bar */
+@media only screen and (max-width: 600px) {  
+    .search-element {
+        width: 100%;   
+    } 
+
+    form.search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form.search input[type=text] {
+        width: 77%
+    }
+
+    form.search button {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+/* Responsiveness of the Subscription Section */
+@media only screen and (max-width: 800px) {
+    .sub-banner h1 {
+        padding-left: 4%;
+    }
+    form.emailbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form.emailbar input[type=text] {
+        width: 99%;
+        margin: 0;
+        padding: 0;
+    }
+
+    form.emailbar select {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    form.emailbar button {
+        width: 100%;
+    }
+}
+
+/* Responsiveness for the Fixed Bar Section */
+@media only screen and (max-width: 800px) {
+    .logo-banner img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-banner p {
+        font-size: 1.10em;
+    }
+}
+
+/* Method Website Responsiveness */
+/* Method Section of the Website Responsiveness */
+@media only screen and (max-width: 750px) {
+    .method-banner {
+        height: 250px;
+    }
+
+    .method-banner h1 {
+        font-size: 1.75rem;
+    }
+
+    .method-banner p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Method Believe Section */
+@media only screen and (max-width: 750px) {
+    .padding-container {
+        padding: 75px 0;
+    }
+
+    .padding-container-color {
+        padding: 75px 0;
+    }
+
+    .method-believe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        width: 100%;
+    }
+    
+    .text-believe {
+        width: 90%;
+    }
+    
+    .pic-believe {
+        width: 90%;
+    }
+
+    .step-1-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .step-1-text p {
+        font-size: 1.10rem;
+    }
+
+    .step-1,
+    .step-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        width: 100%;
+}
+
+    .step-1-points {
+        width: 90%;
+        padding: 0 5px;
+        font-size: 1.10rem;
+    }
+
+    .step-1-points span {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .icons {
+        width: 90%;
+    }
+}
+
+/* Footer Section Responsiveness */ 
+@media only screen and (max-width: 750px) {
+    .padding-footer {
+        padding: 75px 0;
+    }
+
+    .footer-text {
+        width: 90%;
+    }
+
+    .footer-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Speaking Website Responsiveness */
+/* Responsiveness of the Speaking Banner */
+@media only screen and (max-width: 450px) {
+    .speaking-banner {
+        height: 380px;
+    }
+}
+
+/* Responsiveness of the Main Section of the Website */
+@media only screen and (max-width: 850px) {
+    .speaking-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        width: 100%;
+    }
+    
+    .speaking-text {
+        width: 90%;
+    }
+    
+    .speaking-pic {
+        width: 90%;
+        align-items: center;
+    }
+}
+
+/* Responsiveness of the Membership Website */
+/* Responsiveness of the Banner Section */
+@media only screen and (max-width: 750px) {
+    .membership-banner {
+        height: 480px;
+        padding: 120px 10px 100px 10px;
+    }
+    
+    .banner-text {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .banner-title {
+        font-size: 1.5rem;
+        padding-bottom: 25px;
+        line-height: 1.3;
+    }
+    
+    .banner-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.25rem;
+        font-weight: normal;
+        padding-bottom: 20px;
+    }
+
+    .banner-text h6 {
+        width: 90%;
+        padding-top: 40px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+}
+
+/* Responsiveness of the Result Section of the Website */
+@media only screen and (max-width: 750px) {
+     .results-container {
+        width: 100%;
+    }
+
+    .results-text h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 1.45rem;
+    }
+
+    .results-text ul {
+        width: 85%;
+    }
+
+    .results-text li {
+        line-height: 2;
+    }
+}
+
+/* Responsiveness of the Courses Included Section and Additional Perks Sectionm*/
+@media only screen and (max-width: 750px) {
+    .included-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .results-grammar,
+    .results-general,
+    .additional-perks {
+        width: 100%;
+        padding: 0;
+    }
+
+    .grammar-pic,
+    .general-pic,
+    .additional-perks img {
+        width: 95%;
+        height: 250px;
+    }
+
+    .additional-text {
+        font-size: 0.90rem; 
+    }
+}
+
+/* Responsiveness of the Cancellation Section */
+@media only screen and (max-width: 750px) {
+    .cancellation-container h1 {
+        font-size: 1.30rem;
+    }
+}
+
+/* Responsiveness of Membership Video Section */
+@media only screen and (max-width: 750px) {
+    .video-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .video-container h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Responsiveness of the First and Second Reviews Section */
+@media only screen and (max-width: 750px) {
+    .reviews-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reviews-text {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    }
+
+    .reviews-text h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsiveness of the Teacher Introduction Section */
+@media only screen and (max-width: 750px) {
+    .included-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .teacher-pic img {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+/* Responsiveness of the FAQ Section */
+@media only screen and (max-width: 950px) {
+    .faq-container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .faq-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .question1, 
+    .question2,
+    .question3,
+    .question4,
+    .question5,
+    .question6,
+    .question7,
+    .question8,
+    .question9,
+    .question10 {
+        font-size: 1rem;
+    }
+}
+
+/* Responsiveness of the Random Container */
+@media only screen and (max-width: 750px) {
+    .random-container {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsiveness of the Choose Your Plan Sections */
+@media only screen and (max-width: 750px) {
+    .padding-container-dark-color {
+        padding: 75px 0;
+    }
+
+    .plan-title {
+        font-size: 0.75rem;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .included-container-white {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    .included-container-white ul {
+        margin: 0 1.5rem 0 0.5rem;
+    }
+}
+
+/* Courses Website Responsiveness */
+/* Responsiveness of the Courses Banner Section */
+@media only screen and (max-width: 750px) {
+    .courses-banner {
+        padding: 40px 10px 15px 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    .courses-banner .banner-text h1 {
+        font-size: 2.75rem;
+    }
+    
+    .courses-banner .banner-text h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsivennes of the Grammar Section and Advanced Section */
+@media only screen and (max-width: 750px) {
+    .grammar-container,
+    .advanced-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+}
+    
+    .grammar-points,
+    .advanced-points {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .grammar-points img,
+    .advanced-points img {
+        width: 95%;
+        height: 250px;
+    }
+}
+
+/* Resposniveness of the Learn-more Section */
+@media only screen and (max-width: 750px) {
+    .learn-more {
+        padding: 0;
+    }
+
+    .learn-more h2 {
+        padding: 5px 15px;
+        font-size: 1.20rem;
+    }
+}
+
+/* Contact Website Responsiveness */
+/* Responsiveness for the Fixed Bar Section */
+@media only screen and (max-width: 800px) {
+    .logo-banner img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-banner p {
+        font-size: 1.10em;
+    }
+}

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./mainwebsite.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <script src="./mainwebsite.js" defer></script>
+    <title>Perfect English Grammar</title>
+</head>
+<body>
+    <!-- Popup section -->
+    <div id="popup-section">
+        <div id="popup">
+            <div class="interact-logo">
+                <a href="https://www.tryinteract.com/?utm_source=Powered%20By%20Link"><img src="https://www.svgrepo.com/show/401966/information.svg" alt="Interact quiz logo" class="i-logo"></a>
+            </div>
+            <div class="popup-content">
+                <p>What's my English grammar level?</p>
+                <button class="access-quiz-btn" type="button">Take the free quiz here!</button>
+            </div>
+            <div class="toggle-off">
+                <button class="x-button" type="button">
+                    <p class="backslash"></p>
+                    <p class="forwardslash"></p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Quiz Section - Appears only after clicking the button -->
+    <!-- X - Button Section-->
+    <div class="overlay" style="display:none">
+        <div class="toggle-off-quiz">
+            <button class="close-button" type="button">
+                <p class="backslash-quiz"></p>
+                <p class="forwardslash-quiz"></p>
+            </button>
+        </div>
+        <div class="quiz-container">
+            <h1>Which is correct?</h1>
+            <div class="buttons-container">
+                <button class="quiz-answer1" id="btns" type="button"><p></p>Are you live in London?</button>
+                <button class="quiz-answer2" id="btns" type="button"><p></p>Do you live in London?</button>
+                <button class="quiz-answer3" id="btns" type="button"><p></p>Be you live in London?</button>
+                <button class="quiz-answer4" id="btns" type="button"><p></p>I don't know the answer to this question!</button>
+            </div>
+            <h3 class="question-id">1/20</h3>
+        </div>
+    </div>
+
+    <!-- Navigation bar - Desktop Section-->
+    <nav>
+        <div class="desktop">
+            <div>
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Navigation Bar - Mobile Section-->
+        <div class="mobile">
+            <div>
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+            </div>
+                <ul>
+                    <li><a href="method.html">Method</a></li>
+                    <li><a href="#Exercises">Exercises</a></li>
+                    <li><a href="#Explanations">Explanations</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Navigation Bar - Burger -->
+        <div class="burger-mobile">
+            <div class="logo-and-burger">
+                <a href="index.html"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="PEG logo" class="logo"></a>
+                <button id="button"><img src="https://www.svgrepo.com/show/448513/menu.svg" alt="menu icon" class="burger-icon"></button>
+            </div>
+            <div class="burger-nav" style="display:none">
+                <a href="method.html">Method</a>
+                <a href="#Exercises">Exercises</a>
+                <a href="#Explanations">Explanations</a>
+                <a href="speaking.html">Speaking</a>
+                <a href="membership.html">Membership</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+                <a class="last-a" href="login.html" class="login">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section of the Website -->
+    <main>
+    <!-- Banner Section of the Website -->
+        <div class="membership-banner">
+            <div class="banner-text">
+                <h1 class="banner-title">Are you ready to seriously improve your English?</h1>
+                <h3>Get hundreds of lessons with our high quality, professional English courses</h3>
+                <h1>$19 per month</h1>
+                <button type="button">See the membership plans</button>
+                <h6>No contract | 30-day money-back guarantee | Cancel anytime</h6>
+            </div>
+        </div>
+
+    <!-- Results Section -->
+        <div class="padding-container-color">
+            <div class="results-container">
+                <div class="results-text">
+                    <h2>What results can I get?</h2>
+                    <ul>
+                        <li>You'll speak English more correctly, more fluently and with fewer mistakes.</li>
+                        <li>You'll understand native speakers better.</li>
+                        <li>You'll sound more natural and more elegant in English.</li>
+                        <li>You can use our courses all the way up to C1 level and above.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Courses Included Section -->
+        <div class="padding-container">
+            <div class="included-container">
+                <div class="results-text">
+                    <h2>Which courses are included?</h2>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="results-grammar">
+                    <img src="https://blog.cengage.com/wp-content/uploads/2020/07/How-to-improve-grammar-1110x380.jpg" class="grammar-pic">
+                    <p>Complete beginner grammar <br> (40 hours)</p>
+                </div>
+                <div class="results-grammar">
+                    <img src="https://blog.cengage.com/wp-content/uploads/2020/07/How-to-improve-grammar-1110x380.jpg" class="grammar-pic">
+                    <p>Complete pre-intermediate grammar <br> (40 hours)</p>
+                </div>
+                <div class="results-grammar">
+                    <img src="https://blog.cengage.com/wp-content/uploads/2020/07/How-to-improve-grammar-1110x380.jpg" class="grammar-pic">
+                    <p>Complete intermediate grammar <br> (40 hours)</p>
+                </div>
+                <div class="results-grammar">
+                    <img src="https://blog.cengage.com/wp-content/uploads/2020/07/How-to-improve-grammar-1110x380.jpg" class="grammar-pic">
+                    <p>Complete upper-intermediate grammar <br> (40 hours)</p>
+                </div>
+                <div class="results-grammar">
+                    <img src="https://blog.cengage.com/wp-content/uploads/2020/07/How-to-improve-grammar-1110x380.jpg" class="grammar-pic">
+                    <p>Complete advanced grammar <br> (40 hours)</p>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Tenses deep dive <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Articles deep dive <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Conditionals deep dive <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Modals deep dive <br> (10 hours)</p>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 phrasal verbs <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 phrasal verbs <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 collocations <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 collocations <br> (10 hours)</p>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 idioms <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Learn 150 idioms <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Transform your listening <br> (10 hours)</p>
+                </div>
+                <div class="results-general">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" class="general-pic">
+                    <p>Transform your listening <br> (10 hours)</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Second Part of Course Included - Additonal Perks -->
+        <div class="padding-container">
+            <div class="included-container">
+                <div class="additional-text">
+                    <h1>What else do I get?</h1>
+                    <hr class="membership-hr">
+                    <br>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>30-day money-back guarantee</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>Printable PDFs for every course</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>From a Cambridge-educated teacher</p>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>Bonus exercises, audios and flashcards</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>Study anywhere on any device</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>Certificate at the end of each course</p>
+                </div>
+            </div>
+            <div class="included-container">
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>We'll answer your questions</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>New courses will be added</p>
+                </div>
+                <div class="additional-perks">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483336.jpg">
+                    <p>Printable infographics</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Cancellation Section-->
+        <div class="cancellation-container">
+            <h1>Cancel easily anytime. No contract, no obligations.</h1>
+            <hr class="membership-hr">
+            <br>
+        </div>
+
+    <!-- Membership Video Section -->
+        <div class="padding-container">
+            <div class="included-container">
+                <div class="video-container">
+                    <h1>What's inside the membership?</h1>
+                    <video class="video-settings" controls>
+                        <source src="https://www.youtube.com/watch?v=JjxgO9-2-DM" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    <!-- First Reviews Section-->
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Paulina from Poland</h2>
+                    <hr class="membership-hr">
+                    <p>It is marvellous! This repetition of tenses was exactly what I needed! Thank you, Seonaid</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Kelly from Peru</h2>
+                    <hr class="membership-hr">
+                    <p>I say the idioms naturally, it's very rewarding.</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Mikhail from Russia</h2>
+                    <hr class="membership-hr">
+                    <p>The course was very helpful for getting to know better the most difficult (and most favourite) topic in English - English articles.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Teacher Introduction Section -->
+        <div class="padding-container-color">
+            <div class="included-container">
+                <div class="teacher-pic">
+                    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div class="teacher-info">
+                    <h1>Hi, I'm Seonaid, your teacher</h1>
+                    <hr class="membership-hr">
+                    <p>And together with the Perfect English Grammar team, I've helped *tens of millions* of students improve their grammar.</p>
+                    <p>I'm a British native speaker of English. I have a Master's degree (MPhil) from Cambridge University in English and Linguistics and I've been teaching English for 21 years.</p>
+                    <p>I live in London, I've studied French, German, Spanish and Japanese myself and I love learning, culture, books and ideas.</p>
+                    <p>(My name is pronounced "show-na"!)</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- FAQ Section -->
+        <div class="padding-container">
+            <div class="faq-container">
+                <div class="faq-title">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="faq-accordion">
+                    <button type="button" class="question1">
+                        How much does the membership cost?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer1" style="display:none">
+                        <p>It costs $19 (USD) per month or $180 per year. 
+                            Everyone gets the same courses, it's just a bit cheaper if you pay for a year in advance.
+                        </p>
+                    </div>
+                    <button type="button" class="question2">
+                        Can I cancel my membership?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer2" style="display:none">
+                        <p>Of course! You can cancel your membership any time with one click inside your account or by sending us an email. There's no contract or obligation.</p>
+                    </div>
+                    <button type="button" class="question3">
+                        What if I don't like the memebrship?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer3" style="display:none">
+                        <p>We have thousands of happy students! But if you decide that the membership isn't what you need, we offer a full 30-day guarantee. Just send us an email in the first 30 days and we'll give you your money back.</p>
+                    </div>
+                    <button type="button" class="question4">
+                        Are there live lessons?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer4" style="display:none">
+                        <p>No, all the lessons are already recorded so that you can study whenever you want.</p>
+                    </div>
+                    <button type="button" class="question5">
+                        Do I get a certificate?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer5" style="display:none">
+                        <p>Yes! You can get a certificate at the end of every course.</p>
+                    </div>
+                    <button type="button" class="question6">
+                        How long do I have access to the courses?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer6" style="display:none">
+                        <p>You have full access to everything for as long as you stay in the membership.</p>
+                    </div>
+                    <button type="button" class="question7">
+                        Can I get help if I don't understand something?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer7" style="display:none">
+                        <p>Yes! Just write a comment inside the courses or send us an email and a teacher will answer you.</p>
+                    </div>
+                    <button type="button" class="question8">
+                        How much time do I need each day?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer8" style="display:none">
+                        <p>We really recommend studying a little bit every day! Fifteen or twenty minutes is perfect.</p>
+                    </div>
+                    <button type="button" class="question9">
+                        How is this different from the free website?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer9" style="display:none">
+                        <p>The free website has written explanations and some exercises. 
+                            The membership has full online courses, which are carefully organised and go into a lot more detail. 
+                            They have videos, audios, flashcards, PDFs, infographics, summaries and hundreds of review exercises. 
+                            In the membership, you can also have your questions answered by us and you can get a certificate when you finish a course.
+                        </p>
+                    </div>
+                    <button type="button" class="question10">
+                        I'm a teacher. Can I use this material with my students?
+                        <p class="plus-horizontal"></p>
+                        <p class="plus-vertical"></p>
+                    </button>
+                    <div class="answer10" style="display:none">
+                        <p>Yes! You are very welcome to use this material in your classroom or with your private students. Everything can be printed and photocopied.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Random Review-->
+        <div class="random-container">
+            <p>"I have learned 150 new collocations! <br> I love that challenge! 100% recommendation!"<p>
+            <h4>(Joanna, from Germany)</h4>
+            <hr class="membership-hr">
+        </div>
+
+    <!-- Choose Your Plan Section-->
+        <div class="padding-container-dark-color">
+            <div class="plan-title">
+                <h1>Choose Your Plan</h1>
+            </div>
+            <div class="flex-container">
+                <div class="included-container-white">
+                    <div class="membership-plans">
+                        <h3>Monthly membership</h3>
+                        <p class="prices">$19 per month</p>
+                        <ul>
+                            <li>Full access to all our English courses</li>
+                            <li>Pay $19 USD automatically every month until you cancel</li>
+                            <li>Cancel easily any time with one click</li>
+                            <li>30-day money-back guarantee</li>
+                        </ul>
+                        <button type="button" class="purchase-btn">Become a member now</button>
+                    </div>
+                </div>
+                <div class="included-container-white">
+                    <div class="membership-plans">
+                        <h3>Annual membership</h3>
+                        <p class="prices">$180 per year</p>
+                        <ul>
+                            <li>Full access to all our English courses</li>
+                            <li>$48 cheaper than the monthly plan</li>
+                            <li>Pay $180 USD automatically every year until you cancel</li>
+                            <li>Cancel easily any time with one click</li>
+                            <li>30-day money-back guarantee</li>
+                        </ul>
+                        <button type="button" class="purchase-btn">Become a member now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Second Review Sections -->
+        <!-- First Container -->
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Natalita from Russia</h2>
+                    <hr class="membership-hr">
+                    <p>Brilliant explanation and exercises. My English makes a good expression on my colleagues and business partners. I feel more confident and powerful. Thank you! (About the Modals Course)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Frank from Germany</h2>
+                    <hr class="membership-hr">
+                    <p>Your way of explaining is brilliant. The most important thing for me: I have found what I've been looking for all my life. (About the Tenses Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Iwona from Poland</h2>
+                    <hr class="membership-hr">
+                    <p>I know the right collocations now, so I sound more like a native. (About the Collocations Challenges)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Container -->
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Paulina from Poland</h2>
+                    <hr class="membership-hr">
+                    <p>I feel more confident using conditionals and I am more confident during English calls in my job. (About the Conditionals Course)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Alice from Hong Kong</h2>
+                    <hr class="membership-hr">
+                    <p>I am more confident in English listening now. I can understand more than before. The course is amazing. (About the Listening Challenges)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Dominique from France</h2>
+                    <hr class="membership-hr">
+                    <p>I used some of the phrasal verbs with English speakers with resounding success! (About the Advanced Phrasal Verbs Challenges)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Container -->
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Rodrigo from Brazil</h2>
+                    <hr class="membership-hr">
+                    <p>I have conversations with native speakers every week by Skype and they gave me a lot of compliments about how I often use phrasal verbs when speaking. (About Advanced Phrasal Verbs Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Mike living in the USA</h2>
+                    <hr class="membership-hr">
+                    <p>These idioms help me to understand the shows on Netflix much better! (About the Idioms Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Anna from Poland</h2>
+                    <hr class="membership-hr">
+                    <p>So many useful collocations! I encounter them in books and in the press and I'm so pleased I recognise them. (About the Collocations Challenges)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth Container --> 
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Raquel from Spain</h2>
+                    <hr class="membership-hr">
+                    <p>Finally, I've managed to understand conditionals. Now, it's easier to use them and follow more complex conversations. (About the Conditionals Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Barbara from Italy</h2>
+                    <hr class="membership-hr">
+                    <p>It's really done accurately. Now I can read books more easily and I attended a medical course in English with no difficulties. (About the Advanced Phrasal Verbs Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Ivana from Slovakia</h2>
+                    <hr class="membership-hr">
+                    <p>What I liked the most was that when I was listening to music in English with my son, I understood so much better than before the challenge. (About Listening Challenge 2)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fifth Container -->
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Sandra from Serbia</h2>
+                    <hr class="membership-hr">
+                    <p>It's so detailed, so well explained - I couldn't find anywhere something similar. I have better conversations in English. (About the Tenses Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Svetlana from Russia</h2>
+                    <hr class="membership-hr">
+                    <p>My conversations have become more vivid and fluent. (About the Advanced Phrasal Verbs Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Enrico from Italy</h2>
+                    <hr class="membership-hr">
+                    <p>I definitely improved my understanding of movies and newspaper headlines. (About the Idioms Challenge)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sixth Container --> 
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Haward from Spain</h2>
+                    <hr class="membership-hr">
+                    <p>I was able to remember the idioms I learnt while I was speaking with friends, and in my case, it was a real improvement. (About the Idioms Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Paola from Italy</h2>
+                    <hr class="membership-hr">
+                    <p>Useful vocabulary, lovely accent, very kind and professional teacher, effective method. (About the Advanced Phrasal Verbs Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Daniele from Italy</h2>
+                    <hr class="membership-hr">
+                    <p>I had a great conversation in English with a native speaker. Moreover, I feel like I have improved my pronunciation. (About the Listening Challenges)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Seventh Container --> 
+        <div class="padding-container">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <h2>Iris from Germany</h2>
+                    <hr class="membership-hr">
+                    <p>I learned many phrasal verbs for different situations. Anki is a very good tool to go over all the vocabulary we learned. (About the Advanced Phrasal Verbs Challenge)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Antonio from Spain</h2>
+                    <hr class="membership-hr">
+                    <p>The explanations were just what I need, and are difficult to find in many books. I enjoyed it very much. (About the Modals Course)</p>
+                </div>
+                <div class="reviews-text">
+                    <h2>Kristina from Italy</h2>
+                    <hr class="membership-hr">
+                    <p>I loved the exercises (that I can print them and repeat all the course) and the explanations of verbs by such an enthusiastic and nice teacher, Seonaid. Thanks a lot! (About the Idioms Challenge)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
