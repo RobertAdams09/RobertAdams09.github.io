@@ -1729,6 +1729,10 @@ form.emailbar button:hover {
     h3 {
         font-size: 1em;
     }
+
+    h2 {
+        font-size: 1em;
+    }
 }
 
 /* Responsiveness of the Subscription Section */
