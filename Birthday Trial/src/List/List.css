@@ -1,0 +1,48 @@
+.PeopleContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 0.25rem;
+}
+
+.PeopleContainer .images {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #1F487E;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+    width: 150px;
+}
+
+.info h3 {
+    font-size: 0.90rem;
+    font-weight: 700;
+    text-transform: none;
+    margin: 0 0 0.5rem 0;
+}
+
+.info p {
+    font-size: 0.80rem;
+    margin: 0;
+}
+
+.BirthdayWishes {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.90rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.BirthdayWishes label {
+    margin-bottom: 0.5rem;
+}
+
