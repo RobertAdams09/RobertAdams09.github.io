@@ -1,0 +1,192 @@
+/* Universal Styles */ 
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #FFF; 
+}
+
+.main-header {
+    font-size: 2rem;
+}
+
+header span {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Main Body of the Website */
+
+.main-container {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.name,
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0.25rem;
+    border-color: #E43F6F;
+}
+
+#question {
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0.25rem;
+    border-color: #E43F6F;
+}
+
+.submit-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    width: 250px;
+    background-color: #018E42; 
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #2BCE77;
+}
+
+/* Answer Section of the Website */
+.result-container {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.positive-one,
+.positive-two,
+.focus-one,
+.focus-two,
+.negative-one,
+.negative-two {
+    width: 80%;
+    height: 250px;
+    display: none;
+    margin: 0 auto;
+}
+
+.info {
+    display: none;
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+.info a {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive CSS for the Website */
+/* First Responsive from 1280 to 768 */
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+    header h1,
+    #answer {
+        font-size: 1.25rem;
+        padding: 0 0.75rem 1rem 0.75rem;
+    }
+    
+    .main-header,
+    .result-container h1 {
+        font-size: 1.75rem;
+        padding: 0 0.75rem;
+    }
+
+    #question {
+        width: 100%; 
+    }
+
+    .positive-one,
+    .positive-two,
+    .focus-one,
+    .focus-two,
+    .negative-one,
+    .negative-two {
+        width: 80%;
+        height: 250px;
+        display: none;
+        margin: 0 auto;
+    }
+}
+
+/* Second Responsive from 768 to 0 */
+@media only screen and (max-width: 768px) {
+    header h1, 
+    #answer {
+        font-size: 1rem;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+
+    .main-header,
+    .result-container h1 {
+        font-size: 1.40rem;
+        padding: 0 0.5rem;
+    }
+
+    #name,
+    #question {
+        width: 100%;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .positive-one,
+    .positive-two,
+    .focus-one,
+    .focus-two,
+    .negative-one,
+    .negative-two {
+        width: 100%;
+        height: 250px;
+        display: none;
+        margin: 0 auto;
+    }
+}

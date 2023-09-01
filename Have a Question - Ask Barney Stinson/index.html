@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style.css" rel="stylesheet">
+        <script src="./script.js" async></script>
+        <title>You Have a Question = Ask Barney Stinson</title>
+    </head>
+<body>
+    <header>
+        <h1>If you have a question that you cannot find the answer for, then you came to the right place</h1>
+        <h1 class="main-header">Have no fear <span>Barney</span> is here to answer all of your questions!</h1>
+    </header>
+    <!-- Main container with questions and submit button -->
+    <div class="main-container" id="main">
+        <div class="name">
+            <h3>Before Barney answers your question he wants to know your name:</h3>
+            <label for="name">Your name:</label>
+            <input type="text" placeholder="name" name="name" id="name" required>
+        </div>
+        <div class="question">
+            <h3>Okay so let's hear the question:</h3>
+            <label for="question">Your question to Barney:</label>
+            <input type="text" placeholder="your question" name="question" id="question" required>
+        </div>
+        <div class="submit-container">
+            <input type="button" name="answer" value="Submit" id="button" class="btn"/>
+        </div>
+    </div>
+    <!-- Answer Section will appear after filling the main container -->  
+    <div class="result-container" id="result">
+        <h1>Barney's answer:</h1>
+        <h1 id="answer"></h1>
+        <img src="https://media.tenor.com/moZiTn0uld8AAAAM/yesss-neil-patrick-harris.gif" alt="Barney Stinson giving thumbs up in the car" class="positive-one">
+        <img src="https://media.tenor.com/nJ3EeUPhVKkAAAAM/barny-stinson.gif" alt="Barney Stinson blinks" class="positive-two">
+        <img src="http://www.reactiongifs.com/r/2012/12/barney-stinson1.gif" alt="Barney Stinson time to focus" class="focus-one">
+        <img src="http://www.reactiongifs.com/r/2013/03/mind-blown.gif" alt="Barney Stinson time to focus" class="focus-two">
+        <img src="https://64.media.tumblr.com/5a18775a905c87eaabbf34a8af3c72a3/tumblr_noyszn2nkU1s0my1wo1_400.gif" alt="Barney Stinson hangs himself" class="negative-one">
+        <img src="https://media1.popsugar-assets.com/files/thumbor/mn2DYa72y1zffmXgK3CRWyQ0ZEY/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/03/24/845/n/1922283/b247543972c500f5_dramatic/i/reacts-pantomime-killing-himself-lot.gif" alt="Barney Stinson shots himself" class="negative-two">
+    </div>
+    <div class="info" id="link">
+        <p>If you want to ask Barney another question just <a href="file:///C:/Projects/My%20Own%20Projects/My%20Own%20Ideas%20and%20Projects/Have%20a%20Question%20-%20Ask%20Barney%20Stinson/index.html">click here</a></p>
+    </div>
+</body>
+</html>
