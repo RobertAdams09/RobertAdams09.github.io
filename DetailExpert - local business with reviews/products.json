@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "sys": { "id": "1" },
+            "fields": {
+                "title": "Prostaff CC Water Gold Premier",
+                "price": "150.00",
+                "size": "480ml",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://static2.prostaff-jp.eu/pol_pl_Prostaff-CC-Water-Gold-Premier-480-ml-27_2.jpg" }}}
+            }
+        },
+        {
+            "sys": { "id": "2" },
+            "fields": {
+                "title": "ADBL Leather Conditioner ",
+                "price": "65.50",
+                "size": "500ml",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQks7bn7rbG6i5PIYeahoQWW7s1qudODo0XCA&usqp=CAU" }}}
+            }
+        },
+        {
+            "sys": { "id": "3" },
+            "fields": {
+                "title": "Fx Protect Leather Cleaner ",
+                "price": "70.49",
+                "size": "1L",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://mrcleaner.pl/img/imagecache/2001-3000/a4b697a976561536205fd61782e6901d2c80f1b7.webp" }}}
+            }
+        },
+        {
+            "sys": { "id": "4" },
+            "fields": {
+                "title": "Clover Brite Glass Cleaner",
+                "price": "47.90",
+                "size": "5L",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url":  "https://jactools.co.uk/wp-content/uploads/2016/08/p-1432-Clover-Brite-Glass-Cleaner.jpg" }}}
+
+            }
+        },
+        {
+            "sys": { "id": "5" },
+            "fields": {
+                "title": "Pianownica PA",
+                "price": "200.00",
+                "size": "1L",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://kaiserdetailing.pl/userdata/public/gfx/5659/9771.jpg" }}}
+            }
+        },
+        {
+            "sys": { "id": "6" },
+            "fields": {
+                "title": "Prostaff Car Body Glove",
+                "price": "39.90",
+                "size": "-",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://sklep.motogo.pl/images/detailed/57/pol_pl_Prostaff-Car-Body-Glove-Gorilla-no-te-1335_3_sam.jpg" }}}
+            }
+        },
+        {
+            "sys": { "id": "7" },
+            "fields": {
+                "title": "Mikrofibra Ultra Plush Violet",
+                "price": "69.99",
+                "size": "40cm x 60cm",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://a.allegroimg.com/s400/11c18f/bfa1562e4e18be6e4361d3411401/MIKROFIBRA-ULTRA-PLUSH-VIOLET-40cm-x-60cm-1100g-m2" }}}
+            }
+        },
+        {
+            "sys": { "id": "8" },
+            "fields": {
+                "title": "Prostaff Cleaning Wipes",
+                "price": "39.90",
+                "size": "-",
+                "carticon": "https://www.svgrepo.com/show/477550/shopping-cart-6.svg",
+                "image": {"fields": {"file": {"url": "https://a.allegroimg.com/original/111e2e/94e5904142bebed7934f2b6e0cb4/Prostaff-Cleaning-Wipes-Marumaru-Sciereczki-z-APC-Producent-Prostaff" }}}
+            }
+        }
+    ]
+}
