@@ -469,7 +469,7 @@ h2 {
 .courses-cards {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-column-gap: 1em;
     grid-row-gap: 0.3em;
     margin: 0 auto;
@@ -601,7 +601,7 @@ form.emailbar button:hover {
 /* Fixed bar section */
 .fixed-bar {
     position: fixed;
-    padding: 0 1em;
+    padding: 0;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -609,6 +609,13 @@ form.emailbar button:hover {
     bottom: 0;
     box-sizing: border-box;
     background-color: #000;
+}
+
+.fixed-bar-content {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .fixed-bar a { 
@@ -926,7 +933,7 @@ form.emailbar button:hover {
     font-weight: bold;
     padding: 15px;
     cursor: pointer;
-    width: 250px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -1555,7 +1562,7 @@ form.emailbar button:hover {
 
     .toggle-off {
         height: 80px;
-        margin-top: -76px;
+        margin-top: -64px;
     }
 
     .i-logo, 
@@ -1567,16 +1574,36 @@ form.emailbar button:hover {
 
     .popup-content p {
         display: block;
+        margin: 0 auto;
+        max-width: 50%;
     }
 
     .popup-content .access-quiz-btn {
-        width: 55%;
+        max-width: 50%;
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .toggle-off {
+        margin-top: -80px;
     }
 }
 
 @media only screen and (max-width: 468px) {
     .toggle-off {
-        margin-top: -76px;
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #popup-section {
+        height: 100px;
+    }
+
+    .toggle-off {
+        height: 100px;
+        margin-top: -98px;
     }
 }
 
@@ -1728,10 +1755,6 @@ form.emailbar button:hover {
 
     h3 {
         font-size: 1em;
-    }
-
-    h2 {
-        font-size: 0.75em;
     }
 }
 
@@ -1933,7 +1956,7 @@ form.emailbar button:hover {
 
 /* Responsiveness of the Result Section of the Website */
 @media only screen and (max-width: 750px) {
-     .results-container {
+    .results-container {
         width: 100%;
     }
 
@@ -1941,10 +1964,6 @@ form.emailbar button:hover {
         text-align: center;
         padding: 15px;
         font-size: 1.45rem;
-    }
-
-    .results-text ul {
-        width: 85%;
     }
 
     .results-text li {
