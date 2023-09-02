@@ -1758,6 +1758,14 @@ form.emailbar button:hover {
     }
 }
 
+/*Responsiveness of the Materials Sections */
+@media only screen and (max-width: 300px) {
+    .material-cards,
+    .courses-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
 /* Responsiveness of the Subscription Section */
 @media only screen and (max-width: 800px) {
     .sub-banner h1 {
